@@ -1,0 +1,4 @@
+{
+  "name": "Copy of AuditFlow",
+  "description": "An AI agent for code and security auditing. Paste a code snippet, and the AI will generate a detailed report on technical debt, refactoring suggestions, performance optimizations, and security vulnerabilities."
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuditFlow - Agente de Revisión de PRs con IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#5b21b6', // a deep violet
+              'brand-secondary': '#7c3aed', // a brighter violet
+              'brand-accent': '#c026d3', // a vibrant fuchsia
+              'dark-bg': '#020617', // almost black slate
+              'dark-card': '#0f172a', // dark slate
+              'dark-border': '#1e293b', // darker slate for borders
+              'dark-text': '#f8fafc', // almost white slate for primary text
+              'dark-text-secondary': '#94a3b8', // lighter slate for secondary text
+            },
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+                mono: ['Fira Code', 'monospace'],
+            },
+            boxShadow: {
+              'glow-accent': '0 0 15px 0px rgba(192, 38, 211, 0.3)',
+              'glow-secondary': '0 0 15px 0px rgba(124, 58, 237, 0.2)',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark-bg text-dark-text bg-gradient-to-br from-dark-bg via-dark-bg to-[#1e293b]/30">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
